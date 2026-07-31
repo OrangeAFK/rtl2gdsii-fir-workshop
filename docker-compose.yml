@@ -1,0 +1,25 @@
+services:
+  pd-workshop:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        OPENLANE_TAG: "2.3.10"
+    image: ghcr.io/orangeafk/rtl2gdsii-fir-workshop:2026.1
+    working_dir: /workshop
+    volumes:
+      - ./design:/workshop/design
+      - ./config:/workshop/config
+      - ./reports:/workshop/reports
+      - ./scripts:/workshop/scripts
+      - ./runs:/workshop/runs
+    environment:
+      - PDK=sky130A
+      - STD_CELL_LIBRARY=sky130_fd_sc_hd
+      - DESIGN=fir_naive
+      # Set DISPLAY for OpenROAD/KLayout when using host X11/WSLg
+      - DISPLAY=${DISPLAY:-:0}
+    # GUI via host display (WSLg / XQuartz / native X11). Browser noVNC optional later.
+    stdin_open: true
+    tty: true
+    command: ["bash"]
