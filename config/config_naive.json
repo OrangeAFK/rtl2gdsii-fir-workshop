@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "version": 2,
+    "flow": "Classic"
+  },
+  "DESIGN_NAME": "fir_naive",
+  "VERILOG_FILES": ["dir::../design/fir_naive.v"],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 10.0,
+  "FALLBACK_SDC_FILE": "dir::../design/constraints_a.sdc",
+  "PNR_SDC_FILE": "dir::../design/constraints_a.sdc",
+  "SIGNOFF_SDC_FILE": "dir::../design/constraints_a.sdc",
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY": 0.45,
+  "QUIT_ON_TIMING_VIOLATIONS": false,
+  "QUIT_ON_SETUP_VIOLATIONS": false,
+  "QUIT_ON_HOLD_VIOLATIONS": false,
+  "RUN_REPAIR_DESIGN": false,
+  "RUN_POST_GPL_RESIZER_TIMING": false,
+  "RUN_POST_CTS_RESIZER_TIMING": false,
+  "pdk::sky130A": {
+    "SCL": "sky130_fd_sc_hd"
+  }
+}

@@ -1,0 +1,24 @@
+# OpenLane / flow outputs
+runs/*
+!runs/.gitkeep
+reports/**
+!reports/golden/
+!reports/golden/**
+!reports/golden/README.md
+
+# Local editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+__pycache__/
+**/__pycache__/
+*.pyc
+.venv/
+*.log
+*.vcd
+
+# Temporary STA TCL
+scripts/stages/_sta_path.tcl
+**/_sta_path.tcl
