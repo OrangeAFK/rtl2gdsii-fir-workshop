@@ -4,16 +4,12 @@
     "flow": "Classic"
   },
   "DESIGN_NAME": "fir_pipelined",
-  "VERILOG_FILES": ["dir::../design/fir_pipelined.v"],
+  "VERILOG_FILES": ["dir::design/fir_pipelined.v"],
   "CLOCK_PORT": "clk",
   "CLOCK_PERIOD": 10.0,
-  "FALLBACK_SDC_FILE": "dir::../design/constraints_b.sdc",
-  "PNR_SDC_FILE": "dir::../design/constraints_b.sdc",
-  "SIGNOFF_SDC_FILE": "dir::../design/constraints_b.sdc",
+  "FALLBACK_SDC_FILE": "dir::design/constraints_b.sdc",
+  "PNR_SDC_FILE": "dir::design/constraints_b.sdc",
+  "SIGNOFF_SDC_FILE": "dir::design/constraints_b.sdc",
   "FP_CORE_UTIL": 40,
-  "PL_TARGET_DENSITY": 0.45,
-  "QUIT_ON_TIMING_VIOLATIONS": true,
-  "pdk::sky130A": {
-    "SCL": "sky130_fd_sc_hd"
-  }
+  "PL_TARGET_DENSITY_PCT": 45
 }

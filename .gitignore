@@ -4,7 +4,10 @@ runs/*
 reports/**
 !reports/golden/
 !reports/golden/**
-!reports/golden/README.md
+!reports/golden/.gitkeep
+
+# Private workshop design notes (local only — not published)
+ASIC_PD_Workshop_Design.md
 
 # Local editor / OS
 .DS_Store
